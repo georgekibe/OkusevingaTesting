@@ -1,0 +1,1 @@
+Automation Code while trying to externalize the repeated operations like login part, and also to do later for Selenium locators
