@@ -1,0 +1,17 @@
+package testcases;
+
+import org.openqa.selenium.By;
+
+import base.BaseTest;
+
+public class LoginTest extends BaseTest{
+
+	driver.findElement(By.xpath("//button[@id='signin-button']")).click();
+//	Thread.sleep(500);
+	driver.findElement(By.id("Username")).sendKeys("TestFundmanager");
+	driver.findElement(By.id("Password")).sendKeys("Pass123$");
+	driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
+
+	
+	driver.findElement(By.xpath("//i[@class='fa fa-desktop']")).click();
+}

@@ -1,0 +1,34 @@
+package base;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BaseTest {
+	
+	public static WebDriver driver;
+	public static Properties prop = new Properties();
+	public static FileReader fr;
+	
+	public void setUp() throws IOException {
+		
+		if (driver == null) {
+			fr = new FileReader("D:\\Stuff\\QWAutomation\\MavenTesting\\Okusevinga\\src\\test\\resources\\configfiles\\config.properties");
+			prop.load(fr);
+		}
+		
+		if (prop.get("browser") == "chrome") {
+			driver = new ChromeDriver();
+		}
+	}
+	
+	
+	public void tearDown() {
+		
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package base;
+
+public class BaseTest {
+	
+	
+	public void setUp() {
+		
+	}
+	
+	
+	
+	public void tearDown() {
+		
+	}
+
+}

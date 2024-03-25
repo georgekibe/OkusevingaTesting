@@ -1,0 +1,28 @@
+package base;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class BaseTest extends FileNotFoundException{
+	
+	public static WebDriver driver;
+	public static Properties prop = new Properties();
+	public static FileReader fr;
+	
+	public void setUp() throws FileNotFoundException {
+		
+		if (driver == null) {
+			fr = new FileReader("D:\\Stuff\\QWAutomation\\MavenTesting\\Okusevinga\\src\\test\\resources\\configfiles\\config.properties");
+		}
+		
+	}
+	
+	
+	public void tearDown() {
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+package base;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class BaseTest extends FileNotFoundException{
+	
+	public static WebDriver driver;
+	public static Properties prop = new Properties();
+	public static FileReader fr;
+	
+	public void setUp() {
+		
+		if (driver == null) {
+			driver = WebDriver.
+		}
+		
+	}
+	
+	
+	public void tearDown() {
+		
+	}
+
+}
